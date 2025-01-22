@@ -76,6 +76,15 @@ class SignUpWidget extends StatelessWidget {
                 FocusScope.of(context).unfocus();
               },
             ),
+            10.verticalSpace,
+            Container(
+              height: 200,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10.sp),
+                color: Colors.grey,
+              ),
+            ),
             15.verticalSpace,
             SizedBox(
               width: double.infinity,

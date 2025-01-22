@@ -1,5 +1,4 @@
 abstract class ProductEntity{
-  final String id;
   final String name;
   final String? description;
   final double price;
@@ -9,5 +8,5 @@ abstract class ProductEntity{
   final String brand;
   final int stockQuantity;
 
-  ProductEntity({required this.id, required this.name, required this.description, required this.price, required this.discount, required this.imageUrl, required this.category, required this.brand, required this.stockQuantity});
+  ProductEntity({required this.name, required this.description, required this.price, required this.discount, required this.imageUrl, required this.category, required this.brand, required this.stockQuantity});
 }

@@ -8,6 +8,7 @@ class UserModel extends UserEntity {
   final String email;
   @override
   final String name;
+  String? address;
 
   UserModel({
     required this.uid,

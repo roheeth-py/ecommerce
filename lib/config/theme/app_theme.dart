@@ -38,5 +38,8 @@ class AppTheme {
         ),
       ),
     ),
+    appBarTheme: const AppBarTheme().copyWith(
+      color: AppColors.background
+    ),
   );
 }

@@ -4,9 +4,7 @@ import 'package:ecommerce/core/resources/loading_page.dart';
 import 'package:ecommerce/features/authentication/presentation/pages/password_reset.dart';
 import 'package:ecommerce/features/authentication/presentation/pages/sign_in_page.dart';
 import 'package:ecommerce/features/authentication/presentation/pages/sign_up_page.dart';
-import 'package:ecommerce/features/home/presentation/pages/error_page.dart';
 import 'package:ecommerce/features/home/presentation/pages/home_page.dart';
-import 'package:ecommerce/features/home/presentation/pages/loading_page.dart';
 import 'package:ecommerce/injection_container.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
@@ -43,7 +41,7 @@ class Main extends StatelessWidget {
             if(snapshot.connectionState == ConnectionState.waiting){
               return const LoadingPage();
             }else if(snapshot.hasData){
-              return const HomePage();
+              return HomePage();
             }else if(snapshot.hasError){
               return const ErrorPage();
             }else{

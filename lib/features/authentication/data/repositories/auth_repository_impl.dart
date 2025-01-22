@@ -1,5 +1,4 @@
 import 'package:ecommerce/features/authentication/data/data_source/data_source.dart';
-import 'package:ecommerce/features/authentication/data/model/user_model.dart';
 import 'package:ecommerce/features/authentication/domain/repositories/auth_repository.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 

@@ -34,6 +34,7 @@ class SignInWidget extends StatelessWidget {
             key: globalKey,
             child: TextFormField(
               controller: emailController,
+              keyboardType: TextInputType.emailAddress,
               decoration: const InputDecoration(hintText: "Email Address"),
               onTapOutside: (event) {
                 FocusScope.of(context).unfocus();
@@ -44,6 +45,7 @@ class SignInWidget extends StatelessWidget {
           TextFormField(
             controller: passwordController,
             obscureText: true,
+            keyboardType: TextInputType.visiblePassword,
             decoration: const InputDecoration(hintText: "Password"),
             onTapOutside: (event) {
               FocusScope.of(context).unfocus();
